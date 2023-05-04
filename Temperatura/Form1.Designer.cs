@@ -34,11 +34,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(106, 78);
+            this.button1.Location = new System.Drawing.Point(15, 135);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 39);
             this.button1.TabIndex = 8;
@@ -58,7 +61,7 @@
             "Реомюр"});
             this.comboBox1.Location = new System.Drawing.Point(197, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(120, 24);
             this.comboBox1.TabIndex = 9;
             // 
             // comboBox2
@@ -73,7 +76,7 @@
             "Реомюр"});
             this.comboBox2.Location = new System.Drawing.Point(197, 48);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(120, 24);
             this.comboBox2.TabIndex = 10;
             // 
             // textBox1
@@ -102,11 +105,43 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Перевести в градусы по";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 16);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Будет";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(65, 77);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(252, 52);
+            this.textBox2.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(137, 135);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(180, 39);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Сохранить результат в...";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.SaveBtnClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 133);
+            this.ClientSize = new System.Drawing.Size(329, 186);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -127,6 +162,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
     }
 }
 
