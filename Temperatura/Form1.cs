@@ -95,7 +95,6 @@ namespace Temperatura
 
                 try
                 {
-
                     using (FileStream fs = File.Create(path))
                     {
                         byte[] info = new UTF8Encoding(true).GetBytes(text);
